@@ -21,6 +21,9 @@ users:
     shell: /bin/bash
 
 runcmd:
+  # Install Docker 
+  - curl -fsSL https://get.docker.com | sh
+  
   # Install Tassel
   - mkdir -p /opt/tassel
   - git clone https://bitbucket.org/tasseladmin/tassel-5-standalone/ /opt/tassel
