@@ -19,7 +19,7 @@ users:
     ssh-authorized-keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEAZR2qFp/1DYB6g7ixKpQhiMxV+HIh9pn/yJic7XiWJ
     sudo: ALL=(ALL) NOPASSWD:ALL
-    groups: sudo
+    groups: sudo, docker
     shell: /bin/bash
 
 runcmd:
@@ -30,7 +30,8 @@ runcmd:
   - mkdir -p /opt/tassel
   - git clone https://bitbucket.org/tasseladmin/tassel-5-standalone/ /opt/tassel
 
-
   # Download KGD 
+  - sudo su futurebees
+  - cd
   - git clone https://github.com/AgResearch/KGD
   
