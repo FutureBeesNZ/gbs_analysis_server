@@ -9,7 +9,8 @@ packages:
   - gzip
   - git
   - bwa
-  - openjdk-8-jre # Java 8 for Tassel
+  - software-properties-common
+  - openjdk-17-jdk
   - r-base # R and R development
   - r-base-dev
 
