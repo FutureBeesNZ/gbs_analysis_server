@@ -8,6 +8,7 @@ packages:
   - tar
   - gzip
   - git
+  - bwa
   - openjdk-8-jre # Java 8 for Tassel
   - r-base # R and R development
   - r-base-dev
@@ -28,10 +29,6 @@ runcmd:
   - mkdir -p /opt/tassel
   - git clone https://bitbucket.org/tasseladmin/tassel-5-standalone/ /opt/tassel
 
-  # Install BWA
-  - wget "https://newcontinuum.dl.sourceforge.net/project/bio-bwa/bwa-0.7.17.tar.bz2"
-  - tar -xjvf bwa-0.7.17.tar.bz2
-  - cd bwa-0.7.17 && make && cd
 
   # Download KGD 
   - git clone https://github.com/AgResearch/KGD
