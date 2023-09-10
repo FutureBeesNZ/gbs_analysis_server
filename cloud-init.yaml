@@ -31,7 +31,6 @@ runcmd:
   - git clone https://bitbucket.org/tasseladmin/tassel-5-standalone/ /opt/tassel
 
   # Download KGD 
-  - sudo su futurebees
-  - cd
-  - git clone https://github.com/AgResearch/KGD
+  - git clone https://github.com/AgResearch/KGD /home/futurebees
+  - chown -R futurebees /home/futurebees
   
