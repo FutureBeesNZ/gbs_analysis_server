@@ -5,6 +5,7 @@ packages:
   - curl
   - htop
   - tmux
+  - screen
   - tar
   - gzip
   - git
@@ -18,6 +19,7 @@ users:
   - name: futurebees
     ssh-authorized-keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEAZR2qFp/1DYB6g7ixKpQhiMxV+HIh9pn/yJic7XiWJ
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDAe76qQix1cdepqaF6A0ElKTt8WQ8zh8a0d7o1pY0G3u3BOFeBigAHewFFetArhYkI/o9PLawQZYxSY+MdyaLtL+RO3zaomJUOel6CFN5QDFCozhjIIrcc5YWnoqZnA5nnqggFPfydKqpTTKsorDvM7BlLnqmQTgzCMRVRbuWviihZoKNJnUl/lD0bFVB96s/Pnm0y6DDiqKiNwwdoPUgAfkUD2mJUbsKzdC3KrGOaeoN1cBGmDlQfXLLK/qAUQirIoyvfBhgJS/vW7l7gq0CsgVsb5HC+kIwOiibk5++E4mAE2r5ouDLylCf20nWf3Js15lODk99f63g0ZeS4uiOPdq588ffPaKYrfeF+CUCxfJK//ucJuhx9abtW1oP9VgsN6dhhtcrNHPE8zv3n8PhSFD9THd5EsNQizFh+svZMuNlAPE9nc/gN8VaHH950s1qjidRbSH2nvVTGzyNlrsiQlDMiejQDUIJ5NVt1/watVWegHou0+DUur3ep+Rx5EAs= 
     sudo: ALL=(ALL) NOPASSWD:ALL
     groups: sudo, docker
     shell: /bin/bash
